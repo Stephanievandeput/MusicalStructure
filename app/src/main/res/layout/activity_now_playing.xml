@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NowPlayingActivity">
+    android:background="@color/colorMainBackground"
+    tools:context="com.example.android.musicalstructure.NowPlayingActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/now_playing_text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_now_playing"
+            tools:text="Song" />
+
+        <TextView
+            android:id="@+id/now_playing_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_now_playing"
+            tools:text="Artist" />
+
+        <TextView
+            android:id="@+id/now_playing_text_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_now_playing"
+            tools:text="Album" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/lineair_layout_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/colorCategoryA"
+            android:text="@string/stop_button"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextButton" />
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/colorCategoryA"
+            android:text="@string/pause_button"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextButton" />
+
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/colorCategoryA"
+            android:text="@string/play_button"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextButton" />
+
+    </LinearLayout>
+</RelativeLayout>

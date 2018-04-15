@@ -4,4 +4,8 @@
     <dimen name="text_size_categories">30sp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_margin">16dp</dimen>
+    <dimen name="lineair_layout_margin">20dp</dimen>
+    <dimen name="text_size_now_playing">20sp</dimen>
+    <dimen name="text_size_song_activity">16sp</dimen>
 </resources>

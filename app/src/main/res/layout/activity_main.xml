@@ -4,54 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.musicplayer.MainActivity">
+    tools:context="com.example.android.musicalstructure.MainActivity">
 
     <TextView
         android:id="@+id/category_songs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:background="@color/colorCategoryA"
-        android:textColor="@color/colorText"
-        android:textSize="@dimen/text_size_categories"
-        android:textAllCaps="true"
-        android:layout_weight="1"
         android:padding="@dimen/list_item_padding"
-        android:text="@string/category_songs" />
-
-    <TextView
-        android:id="@+id/category_artists"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorCategoryB"
-        android:textColor="@color/colorText"
-        android:textSize="@dimen/text_size_categories"
+        android:text="@string/category_songs"
         android:textAllCaps="true"
-        android:layout_weight="1"
-        android:padding="@dimen/list_item_padding"
-        android:text="@string/category_artists" />
-
-    <TextView
-        android:id="@+id/category_albums"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorCategoryA"
         android:textColor="@color/colorText"
-        android:textSize="@dimen/text_size_categories"
-        android:textAllCaps="true"
-        android:layout_weight="1"
-        android:padding="@dimen/list_item_padding"
-        android:text="@string/category_albums" />
+        android:textSize="@dimen/text_size_categories" />
 
     <TextView
         android:id="@+id/category_now_playing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorCategoryB"
-        android:textColor="@color/colorText"
-        android:textSize="@dimen/text_size_categories"
-        android:textAllCaps="true"
         android:layout_weight="1"
+        android:background="@color/colorCategoryB"
         android:padding="@dimen/list_item_padding"
-        android:text="@string/category_now_playing"/>
+        android:text="@string/category_now_playing"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_size_categories" />
 
 </LinearLayout>

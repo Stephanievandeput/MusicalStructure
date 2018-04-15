@@ -2,6 +2,7 @@ package com.example.android.musicalstructure;
 
 
 import android.app.Activity;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Music> {
+    private int mColorResourceId;
 
-    public SongAdapter(Activity context, ArrayList<Music> songs) {
+    public SongAdapter(Activity context, ArrayList<Music> songs, int colorResourceId) {
         super(context, 0, songs);
+        mColorResourceId = colorResourceId;
     }
 
     @Override
@@ -44,6 +47,10 @@ public class SongAdapter extends ArrayAdapter<Music> {
         // Get the album from the current Music object and
         // set this text on the album TextView
         albumTextView.setText(currentSong.getAlbum());
+
+        View textContainer = listItemView.findViewById(R.id.text_container);
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        textContainer.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

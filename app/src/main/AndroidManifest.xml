@@ -17,15 +17,12 @@
             </intent-filter>
         </activity>
 
-
-        <activity android:name="com.example.android.musicalstructure.AlbumsActivity"
-            android:label="@string/category_albums"/>
-        <activity android:name="com.example.android.musicalstructure.ArtistsActivity"
-            android:label="@string/category_artists"/>
-        <activity android:name="com.example.android.musicalstructure.SongsActivity"
-            android:label="@string/category_songs"/>
-        <activity android:name="com.example.android.musicalstructure.NowPlayingActivity"
-            android:label="@string/category_now_playing"/>
+        <activity
+            android:name="com.example.android.musicalstructure.SongsActivity"
+            android:label="@string/category_songs" />
+        <activity
+            android:name="com.example.android.musicalstructure.NowPlayingActivity"
+            android:label="@string/category_now_playing" />
     </application>
 
 </manifest>
