@@ -75,4 +75,15 @@
             android:textColor="@color/colorTextButton" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/to_songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_margin"
+        android:background="@color/colorCategoryA"
+        android:text="@string/to_songs_button"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextButton" />
+
 </RelativeLayout>

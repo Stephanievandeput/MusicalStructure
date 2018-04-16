@@ -17,6 +17,15 @@ public class NowPlayingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
+        Button toSongs = (Button) findViewById(R.id.to_songs);
+        toSongs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toSongsIntent = new Intent(NowPlayingActivity.this, SongsActivity.class);
+                startActivity(toSongsIntent);
+            }
+        });
+
         Intent intent = getIntent();
         Music music = intent.getParcelableExtra("songtitle");
 
@@ -64,6 +73,8 @@ public class NowPlayingActivity extends AppCompatActivity {
                     mediaPlayer.stop();
                 }
             });
+
+
         }
     }
 }

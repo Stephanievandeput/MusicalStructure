@@ -5,4 +5,5 @@
     <string name="pause_button">Pause</string>
     <string name="stop_button">Stop</string>
     <string name="category_now_playing">Now Playing</string>
+    <string name="to_songs_button">Select Song</string>
 </resources>
